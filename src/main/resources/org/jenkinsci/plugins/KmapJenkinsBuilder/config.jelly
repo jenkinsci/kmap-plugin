@@ -1,0 +1,56 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+  <f:entry title="KMAP url" field="kmapClient">
+    <f:textbox default="${descriptor.getKmapClient()}"/>
+  </f:entry>
+  <f:entry title="Username" field="username">
+    <f:textbox default="${descriptor.getUsername()}"/>
+  </f:entry>
+  <f:entry title="Password" field="password">
+    <f:textbox default="${descriptor.getPassword()}"/>
+  </f:entry>
+  <f:entry title="AppName" field="appName">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Version" field="version">
+    <f:textbox default="${descriptor.getVersion()}"/>
+  </f:entry>
+  <f:entry title="Description" field="description">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Bundle" field="bundle">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="FilePath" field="filePath">
+    <f:textbox default="${descriptor.getFilePath()}"/>
+  </f:entry>
+  <f:entry title="Categories" field="categories">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="IconPath" field="iconPath">
+    <f:textbox />
+  </f:entry>
+    
+	<f:optionalBlock field="publishOptional" title="Publish the app in KMAP" checked="${instance.publishOptional != null}">
+	  	<f:entry title="Groups" field="teams">
+    		<f:textbox value="${instance.publishOptional.teams}"/>
+  		</f:entry>
+  		<f:entry title="Users" field="users">
+    		<f:textbox value="${instance.publishOptional.users}"/>
+  		</f:entry>
+  		<f:entry title="NotifyUsers" field="sendNotifications">
+  			<f:checkbox name="sendNotifications" checked="${instance.publishOptional.sendNotifications}"/> 
+  		</f:entry>
+	</f:optionalBlock>
+    
+    
+	<f:validateButton
+   		title="${%Test Connection}" progress="${%Testing...}"
+   		method="testConnection" with="username,password,kmapClient,categories,appName,teams,users,publishOptional"/>
+   
+</j:jelly>
