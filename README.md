@@ -1,4 +1,4 @@
-Publish mobile applications to your Keivox KMAP Private Mobile App Store [http://www.keivox.com][1]
+Publish mobile applications to your Keivox KMAP Private Mobile App Store ([http://www.keivox.com][1])
 
 More info: [Kmap Plugin Wiki page][2]
 
