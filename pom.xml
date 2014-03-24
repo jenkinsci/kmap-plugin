@@ -9,7 +9,7 @@
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>kmap-jenkins</artifactId>
   <name>Kmap Plugin</name>
-  <version>1.9-SNAPSHOT</version>
+  <version>1.6-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/Keivox+KMAP+Private+Mobile+App+Store+Plugin</url>
  <dependencies>
@@ -22,9 +22,9 @@
 </dependencies>
   
   <scm>
-    <connection>scm:git:https://github.com/jenkinsci/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:https://github.com/jenkinsci/${project.artifactId}.git</developerConnection>
-    <url>https://github.com/jenkinsci/${project.artifactId}</url>
+    <connection>scm:git:https://github.com/jenkinsci/kmap-plugin.git</connection>
+    <developerConnection>scm:git:https://github.com/jenkinsci/kmap-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/kmap-plugin</url>
     <tag>HEAD</tag>
   </scm>
 
