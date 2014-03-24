@@ -9,7 +9,7 @@
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>kmap-jenkins</artifactId>
   <name>Kmap Plugin</name>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.6</version>
   <packaging>hpi</packaging>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/Keivox+KMAP+Private+Mobile+App+Store+Plugin</url>
  <dependencies>
