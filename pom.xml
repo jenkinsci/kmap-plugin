@@ -9,7 +9,7 @@
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>kmap-jenkins</artifactId>
   <name>Kmap Plugin</name>
-  <version>1.7-SNAPSHOT</version>
+  <version>1.8-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
  <dependencies>
